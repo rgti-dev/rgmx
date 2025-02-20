@@ -1,0 +1,34 @@
+{
+  "name": "frontend-ti",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/interaction": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15",
+    "@fullcalendar/vue3": "^6.1.15",
+    "@headlessui/vue": "^1.7.23",
+    "@tailwindcss/vite": "^4.0.3",
+    "@vueuse/core": "^12.7.0",
+    "axios": "^1.7.9",
+    "jspdf": "^2.5.2",
+    "jwt-decode": "^4.0.0",
+    "pinia": "^2.3.1",
+    "three": "^0.173.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.3",
+    "vite": "^6.1.0"
+  }
+}
