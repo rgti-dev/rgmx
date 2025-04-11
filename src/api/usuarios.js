@@ -4,6 +4,7 @@ import api from "./axios";
 export const getUsuarios = async () => {
   try {
     const response = await api.get("/usuarios");
+    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error al obtener los usuarios:", error);
@@ -48,6 +49,8 @@ export const createUsuario = async (usuarioData) => {
 export const loginUsuario = async (credenciales) => {
   try {
     const response = await api.post("/usuarios/login", credenciales);
+    
+    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error("Error al iniciar sesión:", error);
@@ -62,6 +65,17 @@ export const deleteUsuario = async (id) => {
     return response.data;
   } catch (error) {
     console.error("Error al eliminar el usuario:", error);
+    throw error;
+  }
+};
+
+// Actualizar un usuario (solo admin o el propio usuario)
+export const updateUsuario = async (id, usuarioData) => {
+  try {
+    const response = await api.put(`/usuarios/${id}`, usuarioData);
+    return response.data;
+  } catch (error) {
+    console.error("Error al actualizar el usuario:", error);
     throw error;
   }
 };

@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Crear una instancia de Axios
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api", // Usar la URL de la API desde las variables de entorno o localhost
+  baseURL: import.meta.env.VITE_API_URL || "https://dotenv.ddns.net:5000/api", // Usar la URL de la API desde las variables de entorno o localhost
   headers: {
     "Content-Type": "application/json", // Configurar el tipo de contenido por defecto
   },
